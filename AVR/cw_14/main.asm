@@ -1,13 +1,9 @@
-Loop: ldi R20, 
-nop
-nop
-nop
-nop
-nop
-Loop: dec R20
-nop
-nop
-brne Loop
-rjmp Inf_Loop
+ldi R21, 5
+Loop1: ldi R20, 100
+Loop2: dec R20
+nop 
+brne Loop2
+dec R21
+brne Loop1
 
 

@@ -1,46 +1,46 @@
 
+.macro POPIT
+pop @0
+pop @1
+.endmacro
+
+.macro PUSHIT
+push @0
+push @1
+.endmacro
+
 MainLoop:
-    ldi R16, low(100)
-    ldi R17, high(100)
+    ldi R24, low(300)      
+    ldi R25, high(300)     
     rcall DelayInMs
     rjmp MainLoop
 
 ;--------------------------------------------------
 
 DelayInMs:
-    push R16
-    push R17
-    push R24
-    push R25
+    PUSHIT R24, R25
 
-    lds R16, 
-    Wait:
-        rcall DelayOneMs
-        sbiw R16, 1
-        brne Wait
+Wait:
+    rcall DelayOneMs
+    sbiw R24, 1           
+    brne Wait
 
-    pop R25
-    pop R24
-    pop R17
-    pop R16
+    POPIT R25, R24
     ret
+
 ;--------------------------------------------------
 
 DelayOneMs:
-    push R24
-    push R25
+    PUSHIT R24, R25
 
     ldi  R25, high(1986)
     ldi  R24, low(1986)
-
+     
 DelayOneMs_Wait:
     sbiw R24, 1
     brne DelayOneMs_Wait
 
-    pop R25
-    pop R24
+    POPIT R25, R24
     ret
-
-;--------------------------------------------------
 
 

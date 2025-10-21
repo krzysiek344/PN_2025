@@ -1,6 +1,11 @@
 .equ Digits_P = PORTB
 .equ Segments_P = PORTD
 
+.def  Digit_0 = R2
+.def  Digit_1 = R3
+.def  Digit_2 = R4
+.def  Digit_3 = R5
+
 .macro POPIT
     pop @0
     pop @1
@@ -26,52 +31,49 @@ out DDRB, R16
 ldi R16, 0x7F
 out DDRD, R16
 
+;--------------------------------------------------
+
+ldi R16, 0x3F
+mov Digit_0, R16
+ldi R16, 0x06
+mov Digit_1, R16
+ldi R16, 0x5B
+mov Digit_2, R16
+ldi R16, 0x4F
+mov Digit_3, R16
+
 LOAD_CONST R24, R25, 5
 
 ;==========================
-
 MainLoop:
-    rcall SetZero
-    SELECT_SEGM 0x2
+    ; cyfra 0
+    mov R16, Digit_0
+    out Segments_P, R16
+    SELECT_SEGM 0x02
     rcall DelayInMs
 
-    rcall SetOne
-    SELECT_SEGM 0x4
+    ; cyfra 1
+    mov R16, Digit_1
+    out Segments_P, R16
+    SELECT_SEGM 0x04
     rcall DelayInMs
 
-    rcall SetTwo
-    SELECT_SEGM 0x8
+    ; cyfra 2
+    mov R16, Digit_2
+    out Segments_P, R16
+    SELECT_SEGM 0x08
     rcall DelayInMs
 
-    rcall SetThree
+    ; cyfra 3
+    mov R16, Digit_3
+    out Segments_P, R16
     SELECT_SEGM 0x10
     rcall DelayInMs
 
     rjmp MainLoop
-;===========================
-
-SetZero:
-    ldi R16, 0x3F
-    out Segments_P, R16
-    ret
-
-SetOne:
-    ldi R16, 0x06
-    out Segments_P, R16
-    ret
-
-SetTwo:
-    ldi R16, 0x5B
-    out Segments_P, R16
-    ret
-
-SetThree:
-    ldi R16, 0x4F
-    out Segments_P, R16
-    ret
+;==========================
 
 ;---------------------------------------------------
-
 DelayInMs:
     PUSHIT R24, R25
 
@@ -83,8 +85,7 @@ Wait:
     POPIT R25, R24
     ret
 
-;--------------------------------------------------
-
+;---------------------------------------------------
 DelayOneMs:
     PUSHIT R24, R25
 

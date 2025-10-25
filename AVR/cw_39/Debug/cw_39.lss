@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.57  C:\Users\kmus\Desktop\PN_2025\AVR\cw_39\main.asm Tue Oct 21 19:27:21 2025
+AVRASM ver. 2.1.57  C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_39\main.asm Sat Oct 25 18:28:55 2025
 
 [builtin](2): Including file 'C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc'
                  
@@ -721,9 +721,10 @@ AVRASM ver. 2.1.57  C:\Users\kmus\Desktop\PN_2025\AVR\cw_39\main.asm Tue Oct 21 
 000000 e10f      ldi R16, 0x1F
 000001 bb07      out DDRB, R16
 000002 e70f      ldi R16, 0x7F
+                 
 000003 bb01      out DDRD, R16
                  
-000004 e009      ldi R16, 9
+000004 e003      ldi R16, 3
 000005 2e20      mov Digit_0, R16
 000006 e004      ldi R16, 4
 000007 2e30      mov Digit_1, R16

@@ -1,0 +1,30 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.57</VERSION>
+ <DEVICE>"ATtiny2313"</DEVICE>
+ <WORKING_DIR>C:\Users\kmus\Desktop\PN_2025\AVR\cw_27\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_27\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_27\Debug/cw_27.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>cw_27.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>cw_27.map</FILE>
+  <FILE>cw_27.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MainLoop><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_27\main.asm</FILE><LINE>12</LINE></MainLoop>
+  <DelayInMs><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_27\main.asm</FILE><LINE>20</LINE></DelayInMs>
+  <Wait><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_27\main.asm</FILE><LINE>23</LINE></Wait>
+  <DelayOneMs><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_27\main.asm</FILE><LINE>33</LINE></DelayOneMs>
+  <DelayOneMs_Wait><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_27\main.asm</FILE><LINE>39</LINE></DelayOneMs_Wait>
+ </LABELS>
+</ASSEMBLER_INFO>

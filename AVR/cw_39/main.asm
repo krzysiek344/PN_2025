@@ -58,7 +58,7 @@ ldi R16, 0x7F
 
 out DDRD, R16
 
-ldi R16, 
+ldi R16, 3
 mov Digit_0, R16
 ldi R16, 4
 mov Digit_1, R16

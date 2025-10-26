@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.57  C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_40\main.asm Sat Oct 25 18:28:55 2025
+AVRASM ver. 2.1.57  C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_40\main.asm Sun Oct 26 16:03:40 2025
 
 [builtin](2): Including file 'C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc'
                  
@@ -736,132 +736,117 @@ AVRASM ver. 2.1.57  C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_40\main.asm Sat 
                  
                  
                  MainLoop:
-                 	/*
-                 	LOAD_CONST R24, R25, 5
-                 
-                     ;SET_DIGIT 0
-                     ;SET_DIGIT 1
-                     ;SET_DIGIT 2
-                     SET_DIGIT 3
-                 
-                 	LOAD_CONST R24, R25, 1000
-                 	rcall DelayInMs
                  	
-                 	inc Digit_3
-                 	ldi R16, 10
-                 	cp Digit_3, R16
-                     brne MainLoop
-                 	clr Digit_3
-                 	rjmp MainLoop
-                 	*/
-                     ; --- odœwie¿anie wszystkich cyfr ---
-00000c e085
-00000d e090      	LOAD_CONST R24, R25, 5
+00000c 9453      	inc Digit_3
+00000d e00a      	ldi R16, 10
+00000e 1650      	cp Digit_3, R16
+00000f f481      	brne NoCarry
                  
-00000e 2d02
-00000f d029
-000010 bb02
-000011 e002
-000012 bb08
-000013 d034          SET_DIGIT 0
-000014 2d03
-000015 d023
-000016 bb02
-000017 e004
-000018 bb08
-000019 d02e          SET_DIGIT 1
-00001a 2d04
-00001b d01d
-00001c bb02
-00001d e008
-00001e bb08
-00001f d028          SET_DIGIT 2
-000020 2d05
-000021 d017
-000022 bb02
-000023 e100
-000024 bb08
-000025 d022          SET_DIGIT 3
+000010 2455      	clr Digit_3
+000011 9443      	inc Digit_2
+000012 e00a      	ldi R16, 10
+000013 1640      	cp Digit_2, R16
+000014 f459      	brne NoCarry
                  
-                     ; --- opóŸnienie, ¿eby zobaczyæ ruch ---
-000026 d021          rcall DelayInMs
+000015 2444      	clr Digit_2
+000016 9433      	inc Digit_1
+000017 e00a      	ldi R16, 10
+000018 1630      	cp Digit_1, R16
+000019 f431      	brne NoCarry
                  
-                     ; --- licznik dekadowy ---
-000027 9423          inc Digit_0             ; zwiêksz najm³odsz¹ cyfrê
-000028 e00a          ldi R16, 10
-000029 1620          cp Digit_0, R16
-00002a f709          brne MainLoop           ; jeœli <10, wróæ
+00001a 2433      	clr Digit_1
+00001b 9423      	inc Digit_0
+00001c e00a      	ldi R16, 10
+00001d 1620      	cp Digit_0, R16
+00001e f409      	brne NoCarry
                  
-                     ; --- przeniesienie z 0. do 1. cyfry ---
-00002b 2422          clr Digit_0
-00002c 9433          inc Digit_1
-00002d 1630          cp Digit_1, R16
-00002e f6e9          brne MainLoop
+00001f 2422      	clr Digit_0
                  
-                     ; --- przeniesienie z 1. do 2. cyfry ---
-00002f 2433          clr Digit_1
-000030 9443          inc Digit_2
-000031 1640          cp Digit_2, R16
-000032 f6c9          brne MainLoop
+                 NoCarry:
                  
-                     ; --- przeniesienie z 2. do 3. cyfry ---
-000033 2444          clr Digit_2
-000034 9453          inc Digit_3
-000035 1650          cp Digit_3, R16
-000036 f6a9          brne MainLoop
+000020 e083
+000021 e090      	LOAD_CONST R24, R25, 3
+000022 2d02
+000023 d01d
+000024 bb02
+000025 e002
+000026 bb08
+000027 d028          SET_DIGIT 0
+000028 e083
+000029 e090      	LOAD_CONST R24, R25, 3
+00002a 2d03
+00002b d015
+00002c bb02
+00002d e004
+00002e bb08
+00002f d020          SET_DIGIT 1
+000030 e083
+000031 e090      	LOAD_CONST R24, R25, 3
+000032 2d04
+000033 d00d
+000034 bb02
+000035 e008
+000036 bb08
+000037 d018          SET_DIGIT 2
+000038 e083
+000039 e090      	LOAD_CONST R24, R25, 3
+00003a 2d05
+00003b d005
+00003c bb02
+00003d e100
+00003e bb08
+00003f d010          SET_DIGIT 3
                  
-                     ; --- overflow 9999 -> 0000 ---
-000037 2455          clr Digit_3
-000038 cfd3          rjmp MainLoop
+000040 cfcb      	rjmp MainLoop
+                 
                  
                  
                  
                  
                  DigitTo7segCode:
-000039 93ef          push R30
-00003a 93ff          push R31
+000041 93ef          push R30
+000042 93ff          push R31
                  
-00003b e8e6          ldi R30, low(SegCode<<1)
-00003c e0f0          ldi R31, high(SegCode<<1)
+000043 e9e6          ldi R30, low(SegCode<<1)
+000044 e0f0          ldi R31, high(SegCode<<1)
                  
-00003d 0fe0          add R30, R16
-00003e 1df1          adc R31, R1
+000045 0fe0          add R30, R16
+000046 1df1          adc R31, R1
                  
-00003f 9104          lpm R16, Z
+000047 9104          lpm R16, Z
                  
-000040 91ff          pop R31
-000041 91ef          pop R30
-000042 9508          ret
+000048 91ff          pop R31
+000049 91ef          pop R30
+00004a 9508          ret
                  
-000043 063f
-000044 4f5b
-000045 6d66
-000046 077d
-000047 6f7f      SegCode: .db 0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F
+00004b 063f
+00004c 4f5b
+00004d 6d66
+00004e 077d
+00004f 6f7f      SegCode: .db 0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F
                  
                  
                  DelayInMs:
-000048 938f
-000049 939f          PUSHIT R24, R25
-                 Wait:
-00004a d005          rcall DelayOneMs
-00004b 9701          sbiw R24, 1
-00004c f7e9          brne Wait
-00004d 919f
-00004e 918f          POPIT R25, R24
-00004f 9508          ret
-                 
-                 DelayOneMs:
 000050 938f
 000051 939f          PUSHIT R24, R25
-000052 e097          ldi  R25, high(1986)
-000053 ec82          ldi  R24, low(1986)
+                 Wait:
+000052 d005          rcall DelayOneMs
+000053 9701          sbiw R24, 1
+000054 f7e9          brne Wait
+000055 919f
+000056 918f          POPIT R25, R24
+000057 9508          ret
+                 
+                 DelayOneMs:
+000058 938f
+000059 939f          PUSHIT R24, R25
+00005a e097          ldi  R25, high(1986)
+00005b ec82          ldi  R24, low(1986)
                  DelayOneMs_Wait:
-000054 9701          sbiw R24, 1
-000055 f7f1          brne DelayOneMs_Wait
-000056 919f
-000057 918f          POPIT R25, R24
-000058 9508          ret
+00005c 9701          sbiw R24, 1
+00005d f7f1          brne DelayOneMs_Wait
+00005e 919f
+00005f 918f          POPIT R25, R24
 
 
 RESOURCE USE INFORMATION
@@ -881,8 +866,8 @@ counted separately from r26..r31 here.
 "ATtiny2313" register use summary:
 r0 :   0 r1 :   1 r2 :   5 r3 :   5 r4 :   5 r5 :   5 r6 :   0 r7 :   0 
 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 r13:   0 r14:   0 r15:   0 
-r16:  35 r17:   0 r18:   0 r19:   0 r20:   0 r21:   0 r22:   0 r23:   0 
-r24:   8 r25:   6 r26:   0 r27:   0 r28:   0 r29:   0 r30:   4 r31:   4 
+r16:  38 r17:   0 r18:   0 r19:   0 r20:   0 r21:   0 r22:   0 r23:   0 
+r24:  11 r25:   9 r26:   0 r27:   0 r28:   0 r29:   0 r30:   4 r31:   4 
 x  :   0 y  :   0 z  :   1 
 Registers used: 11 out of 35 (31.4%)
 
@@ -896,9 +881,9 @@ brvs  :   0 bset  :   0 bst   :   0 cbi   :   0 cbr   :   0 clc   :   0
 clh   :   0 cli   :   0 cln   :   0 clr   :   4 cls   :   0 clt   :   0 
 clv   :   0 clz   :   0 com   :   0 cp    :   4 cpc   :   0 cpi   :   0 
 cpse  :   0 dec   :   0 eor   :   0 icall :   0 ijmp  :   0 in    :   0 
-inc   :   4 ld    :   0 ldd   :   0 ldi   :  17 lds   :   0 lpm   :   2 
+inc   :   4 ld    :   0 ldd   :   0 ldi   :  26 lds   :   0 lpm   :   2 
 lsl   :   0 lsr   :   0 mov   :   8 movw  :   0 neg   :   0 nop   :   0 
-or    :   0 ori   :   0 out   :  10 pop   :   6 push  :   6 rcall :  10 
+or    :   0 ori   :   0 out   :  10 pop   :   6 push  :   6 rcall :   9 
 ret   :   3 reti  :   0 rjmp  :   1 rol   :   0 ror   :   0 sbc   :   0 
 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 sbiw  :   2 sbr   :   0 
 sbrc  :   0 sbrs  :   0 sec   :   0 seh   :   0 sei   :   0 sen   :   0 
@@ -910,7 +895,7 @@ Instructions used: 16 out of 105 (15.2%)
 "ATtiny2313" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x0000b2    168     10    178    2048   8.7%
+[.cseg] 0x000000 0x0000c2    184     10    194    2048   9.5%
 [.dseg] 0x000060 0x000060      0      0      0     128   0.0%
 [.eseg] 0x000000 0x000000      0      0      0     128   0.0%
 

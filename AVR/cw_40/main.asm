@@ -70,62 +70,45 @@ mov Digit_3, R16
 
 
 MainLoop:
-	/*
-	LOAD_CONST R24, R25, 5
-
-    ;SET_DIGIT 0
-    ;SET_DIGIT 1
-    ;SET_DIGIT 2
-    SET_DIGIT 3
-
-	LOAD_CONST R24, R25, 1000
-	rcall DelayInMs
 	
 	inc Digit_3
 	ldi R16, 10
 	cp Digit_3, R16
-    brne MainLoop
-	clr Digit_3
-	rjmp MainLoop
-	*/
-    ; --- odœwie¿anie wszystkich cyfr ---
-	LOAD_CONST R24, R25, 5
+	brne NoCarry
 
+	clr Digit_3
+	inc Digit_2
+	ldi R16, 10
+	cp Digit_2, R16
+	brne NoCarry
+
+	clr Digit_2
+	inc Digit_1
+	ldi R16, 10
+	cp Digit_1, R16
+	brne NoCarry
+
+	clr Digit_1
+	inc Digit_0
+	ldi R16, 10
+	cp Digit_0, R16
+	brne NoCarry
+
+	clr Digit_0
+
+NoCarry:
+
+	LOAD_CONST R24, R25, 3
     SET_DIGIT 0
+	LOAD_CONST R24, R25, 3
     SET_DIGIT 1
+	LOAD_CONST R24, R25, 3
     SET_DIGIT 2
+	LOAD_CONST R24, R25, 3
     SET_DIGIT 3
 
-    ; --- opóŸnienie, ¿eby zobaczyæ ruch ---
-    rcall DelayInMs
+	rjmp MainLoop
 
-    ; --- licznik dekadowy ---
-    inc Digit_0             ; zwiêksz najm³odsz¹ cyfrê
-    ldi R16, 10
-    cp Digit_0, R16
-    brne MainLoop           ; jeœli <10, wróæ
-
-    ; --- przeniesienie z 0. do 1. cyfry ---
-    clr Digit_0
-    inc Digit_1
-    cp Digit_1, R16
-    brne MainLoop
-
-    ; --- przeniesienie z 1. do 2. cyfry ---
-    clr Digit_1
-    inc Digit_2
-    cp Digit_2, R16
-    brne MainLoop
-
-    ; --- przeniesienie z 2. do 3. cyfry ---
-    clr Digit_2
-    inc Digit_3
-    cp Digit_3, R16
-    brne MainLoop
-
-    ; --- overflow 9999 -> 0000 ---
-    clr Digit_3
-    rjmp MainLoop
 
 
 

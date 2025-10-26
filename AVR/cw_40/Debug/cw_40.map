@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.57  C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_40\main.asm Sat Oct 25 18:28:55 2025
+AVRASM ver. 2.1.57  C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_40\main.asm Sun Oct 26 16:03:40 2025
 
 
 EQU  SIGNATURE_000 0000001e
@@ -455,9 +455,10 @@ DEF  Digit_1      r3
 DEF  Digit_2      r4
 DEF  Digit_3      r5
 CSEG MainLoop     0000000c
-CSEG DigitTo7segCode 00000039
-CSEG DelayInMs    00000048
-CSEG SegCode      00000043
-CSEG Wait         0000004a
-CSEG DelayOneMs   00000050
-CSEG DelayOneMs_Wait 00000054
+CSEG NoCarry      00000020
+CSEG DigitTo7segCode 00000041
+CSEG DelayInMs    00000050
+CSEG SegCode      0000004b
+CSEG Wait         00000052
+CSEG DelayOneMs   00000058
+CSEG DelayOneMs_Wait 0000005c

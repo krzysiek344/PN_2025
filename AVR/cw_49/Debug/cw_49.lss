@@ -1,31 +1,31 @@
 
-AVRASM ver. 2.1.57  C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm Sun Oct 26 16:03:38 2025
+AVRASM ver. 2.1.57  C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm Wed Oct 29 00:39:03 2025
 
-[builtin](2): Including file 'C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc'
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(149): warning: .def: 'XL' redefinition (r26->r16)
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(150): warning: .def: 'XH' redefinition (r27->r17)
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(151): warning: .def: 'YL' redefinition (r28->r18)
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(152): warning: .def: 'YH' redefinition (r29->r19)
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(154): warning: Register r16 already defined by the .DEF directive
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(155): warning: Register r17 already defined by the .DEF directive
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(156): warning: Register r18 already defined by the .DEF directive
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(157): warning: Register r19 already defined by the .DEF directive
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(159): warning: Register r24 already defined by the .DEF directive
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register r25 already defined by the .DEF directive
+[builtin](2): Including file 'C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313Adef.inc'
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(210): warning: .def: 'XL' redefinition (r26->r16)
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(211): warning: .def: 'XH' redefinition (r27->r17)
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(213): warning: .def: 'YL' redefinition (r28->r18)
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(214): warning: .def: 'YH' redefinition (r29->r19)
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(218): warning: Register r16 already defined by the .DEF directive
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(219): warning: Register r17 already defined by the .DEF directive
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(221): warning: Register r18 already defined by the .DEF directive
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(222): warning: Register r19 already defined by the .DEF directive
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(225): warning: Register r24 already defined by the .DEF directive
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm(226): warning: Register r25 already defined by the .DEF directive
                  
-                 /***MACRO***/        
+                  ;### MACROS & defs (.equ)###
                  
-                 ;***** Created: 2011-02-09 12:04 ******* Source: ATtiny2313.xml **********
+                 ;***** Created: 2011-02-09 12:04 ******* Source: ATtiny2313A.xml *********
                  ;*************************************************************************
                  ;* A P P L I C A T I O N   N O T E   F O R   T H E   A V R   F A M I L Y
                  ;* 
                  ;* Number            : AVR000
-                 ;* File Name         : "tn2313def.inc"
-                 ;* Title             : Register/Bit Definitions for the ATtiny2313
+                 ;* File Name         : "tn2313Adef.inc"
+                 ;* Title             : Register/Bit Definitions for the ATtiny2313A
                  ;* Date              : 2011-02-09
                  ;* Version           : 2.35
                  ;* Support E-mail    : avr@atmel.com
-                 ;* Target MCU        : ATtiny2313
+                 ;* Target MCU        : ATtiny2313A
                  ;* 
                  ;* DESCRIPTION
                  ;* When including this file in the assembly program file, all I/O register 
@@ -53,15 +53,15 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  ;* ...                         ;otherwise do something else
                  ;*************************************************************************
                  
-                 #ifndef _TN2313DEF_INC_
-                 #define _TN2313DEF_INC_
+                 #ifndef _TN2313ADEF_INC_
+                 #define _TN2313ADEF_INC_
                  
                  
                  #pragma partinc 0
                  
                  ; ***** SPECIFY DEVICE ***************************************************
-                 .device ATtiny2313
-                 #pragma AVRPART ADMIN PART_NAME ATtiny2313
+                 .device ATtiny2313A
+                 #pragma AVRPART ADMIN PART_NAME ATtiny2313A
                  .equ	SIGNATURE_000	= 0x1e
                  .equ	SIGNATURE_001	= 0x91
                  .equ	SIGNATURE_002	= 0x0a
@@ -103,7 +103,7 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  .equ	GTCCR	= 0x23
                  .equ	TCCR1C	= 0x22
                  .equ	WDTCR	= 0x21
-                 .equ	PCMSK	= 0x20
+                 .equ	PCMSK0	= 0x20
                  .equ	EEAR	= 0x1e
                  .equ	EEDR	= 0x1d
                  .equ	EECR	= 0x1c
@@ -127,6 +127,10 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  .equ	UCSRB	= 0x0a
                  .equ	UBRRL	= 0x09
                  .equ	ACSR	= 0x08
+                 .equ	BODCR	= 0x07
+                 .equ	PRR	= 0x06
+                 .equ	PCMSK2	= 0x05
+                 .equ	PCMSK1	= 0x04
                  .equ	UCSRC	= 0x03
                  .equ	UBRRH	= 0x02
                  .equ	DIDR	= 0x01
@@ -286,19 +290,6 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  .equ	WDIF	= 7	; Watchdog Timeout Interrupt Flag
                  
                  
-                 ; ***** EXTERNAL_INTERRUPT ***********
-                 ; GIMSK - General Interrupt Mask Register
-                 .equ	PCIE	= 5	; 
-                 .equ	INT0	= 6	; External Interrupt Request 0 Enable
-                 .equ	INT1	= 7	; External Interrupt Request 1 Enable
-                 
-                 ; EIFR - Extended Interrupt Flag Register
-                 .equ	GIFR	= EIFR	; For compatibility
-                 .equ	PCIF	= 5	; 
-                 .equ	INTF0	= 6	; External Interrupt Flag 0
-                 .equ	INTF1	= 7	; External Interrupt Flag 1
-                 
-                 
                  ; ***** USART ************************
                  ; UDR - USART I/O Data Register
                  .equ	UDR0	= 0	; USART I/O Data Register bit 0
@@ -341,7 +332,10 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  .equ	USBS	= 3	; Stop Bit Select
                  .equ	UPM0	= 4	; Parity Mode Bit 0
                  .equ	UPM1	= 5	; Parity Mode Bit 1
-                 .equ	UMSEL	= 6	; USART Mode Select
+                 .equ	UMSEL0 	= 6	; USART Mode Select 0
+                 .equ 	UMSEL1 	= 7 ; USART Mode Select 1
+                 .equ 	UCPHA  	= 1 ; USART MSPIM Clock Phase
+                 .equ 	UDORD  	= 2 ; USART MSPIM Data Order 
                  
                  .equ	UBRR	= UBRRL	; For compatibility
                  
@@ -449,6 +443,69 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  .equ	PINA2	= 2	; Input Pins, Port A bit 2
                  
                  
+                 ; ***** USI **************************
+                 ; USIDR - USI Data Register
+                 .equ	USIDR0	= 0	; USI Data Register bit 0
+                 .equ	USIDR1	= 1	; USI Data Register bit 1
+                 .equ	USIDR2	= 2	; USI Data Register bit 2
+                 .equ	USIDR3	= 3	; USI Data Register bit 3
+                 .equ	USIDR4	= 4	; USI Data Register bit 4
+                 .equ	USIDR5	= 5	; USI Data Register bit 5
+                 .equ	USIDR6	= 6	; USI Data Register bit 6
+                 .equ	USIDR7	= 7	; USI Data Register bit 7
+                 
+                 ; USISR - USI Status Register
+                 .equ	USICNT0	= 0	; USI Counter Value Bit 0
+                 .equ	USICNT1	= 1	; USI Counter Value Bit 1
+                 .equ	USICNT2	= 2	; USI Counter Value Bit 2
+                 .equ	USICNT3	= 3	; USI Counter Value Bit 3
+                 .equ	USIDC	= 4	; Data Output Collision
+                 .equ	USIPF	= 5	; Stop Condition Flag
+                 .equ	USIOIF	= 6	; Counter Overflow Interrupt Flag
+                 .equ	USISIF	= 7	; Start Condition Interrupt Flag
+                 
+                 ; USICR - USI Control Register
+                 .equ	USITC	= 0	; Toggle Clock Port Pin
+                 .equ	USICLK	= 1	; Clock Strobe
+                 .equ	USICS0	= 2	; USI Clock Source Select Bit 0
+                 .equ	USICS1	= 3	; USI Clock Source Select Bit 1
+                 .equ	USIWM0	= 4	; USI Wire Mode Bit 0
+                 .equ	USIWM1	= 5	; USI Wire Mode Bit 1
+                 .equ	USIOIE	= 6	; Counter Overflow Interrupt Enable
+                 .equ	USISIE	= 7	; Start Condition Interrupt Enable
+                 
+                 
+                 ; ***** EXTERNAL_INTERRUPT ***********
+                 ; GIMSK - General Interrupt Mask Register
+                 .equ  PCIE1 = 3 ;
+                 .equ  PCIE2 = 4 ;
+                 .equ	PCIE0	= 5	; 
+                 .equ	INT0	= 6	; External Interrupt Request 0 Enable
+                 .equ	INT1	= 7	; External Interrupt Request 1 Enable
+                 
+                 ; EIFR - Extended Interrupt Flag Register
+                 .equ	GIFR	= EIFR	; For compatibility
+                 .equ	PCIF0	= 5	; 
+                 .equ  PCIF2	= 4   ;
+                 .equ  PCIF1   = 3   ;
+                 .equ	INTF0	= 6	; External Interrupt Flag 0
+                 .equ	INTF1	= 7	; External Interrupt Flag 1
+                 
+                 ; PCMSK2 - Pin Change Interrupt Mask Register 2
+                 .equ	PCINT11	= 0	; Pin Change Interrupt Mask 11
+                 .equ	PCINT12	= 1	; Pin Change Interrupt Mask 12
+                 .equ	PCINT13	= 2	; Pin Change Interrupt Mask 13
+                 .equ	PCINT14	= 3	; Pin Change Interrupt Mask 14
+                 .equ	PCINT15	= 4	; Pin Change Interrupt Mask 15
+                 .equ	PCINT16	= 5	; Pin Change Interrupt Mask 16
+                 .equ	PCINT17	= 6	; Pin Change Interrupt Mask 17
+                 
+                 ; PCMSK1 - Pin Change Interrupt Mask Register 1
+                 .equ	PCINT8	= 0	; Pin Change Interrupt Mask 8
+                 .equ	PCINT9	= 1	; Pin Change Interrupt Mask 9
+                 .equ	PCINT10	= 2	; Pin Change Interrupt Mask 10
+                 
+                 
                  ; ***** CPU **************************
                  ; SREG - Status Register
                  .equ	SREG_C	= 0	; Carry Flag
@@ -544,37 +601,15 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  .equ	GPIOR06	= 6	; General Purpose I/O Register 0 bit 6
                  .equ	GPIOR07	= 7	; General Purpose I/O Register 0 bit 7
                  
+                 ; PRR - Power reduction register
+                 .equ	PRUSART	= 0	; 
+                 .equ	PRUSI	= 1	; 
+                 .equ	PRTIM0	= 2	; 
+                 .equ	PRTIM1	= 3	; 
                  
-                 ; ***** USI **************************
-                 ; USIDR - USI Data Register
-                 .equ	USIDR0	= 0	; USI Data Register bit 0
-                 .equ	USIDR1	= 1	; USI Data Register bit 1
-                 .equ	USIDR2	= 2	; USI Data Register bit 2
-                 .equ	USIDR3	= 3	; USI Data Register bit 3
-                 .equ	USIDR4	= 4	; USI Data Register bit 4
-                 .equ	USIDR5	= 5	; USI Data Register bit 5
-                 .equ	USIDR6	= 6	; USI Data Register bit 6
-                 .equ	USIDR7	= 7	; USI Data Register bit 7
-                 
-                 ; USISR - USI Status Register
-                 .equ	USICNT0	= 0	; USI Counter Value Bit 0
-                 .equ	USICNT1	= 1	; USI Counter Value Bit 1
-                 .equ	USICNT2	= 2	; USI Counter Value Bit 2
-                 .equ	USICNT3	= 3	; USI Counter Value Bit 3
-                 .equ	USIDC	= 4	; Data Output Collision
-                 .equ	USIPF	= 5	; Stop Condition Flag
-                 .equ	USIOIF	= 6	; Counter Overflow Interrupt Flag
-                 .equ	USISIF	= 7	; Start Condition Interrupt Flag
-                 
-                 ; USICR - USI Control Register
-                 .equ	USITC	= 0	; Toggle Clock Port Pin
-                 .equ	USICLK	= 1	; Clock Strobe
-                 .equ	USICS0	= 2	; USI Clock Source Select Bit 0
-                 .equ	USICS1	= 3	; USI Clock Source Select Bit 1
-                 .equ	USIWM0	= 4	; USI Wire Mode Bit 0
-                 .equ	USIWM1	= 5	; USI Wire Mode Bit 1
-                 .equ	USIOIE	= 6	; Counter Overflow Interrupt Enable
-                 .equ	USISIE	= 7	; Start Condition Interrupt Enable
+                 ; BODCR - BOD control register
+                 .equ	BPDSE	= 0	; 
+                 .equ	BPDS	= 1	; 
                  
                  
                  
@@ -660,7 +695,8 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  .equ	UTXCaddr	= 0x0009	; USART, Tx Complete
                  .equ	UTXC0addr	= 0x0009	; For compatibility
                  .equ	ACIaddr	= 0x000a	; Analog Comparator
-                 .equ	PCIaddr	= 0x000b	; 
+                 .equ	PCIBaddr	= 0x000b	; Pin Change Interrupt Request B
+                 .equ	PCIaddr	= 0x000b	; For compatibility
                  .equ	OC1Baddr	= 0x000c	; 
                  .equ	OC0Aaddr	= 0x000d	; 
                  .equ	OC0Baddr	= 0x000e	; 
@@ -668,37 +704,50 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  .equ	USI_OVFaddr	= 0x0010	; USI Overflow
                  .equ	ERDYaddr	= 0x0011	; 
                  .equ	WDTaddr	= 0x0012	; Watchdog Timer Overflow
+                 .equ	PCIAaddr	= 0x0013	; Pin Change Interrupt Request A
+                 .equ	PCIDaddr	= 0x0014	; Pin Change Interrupt Request D
                  
-                 .equ	INT_VECTORS_SIZE	= 19	; size in words
+                 .equ	INT_VECTORS_SIZE	= 21	; size in words
                  
-                 #endif  /* _TN2313DEF_INC_ */
+                 #endif  /* _TN2313ADEF_INC_ */
                  
                  ; ***** END OF FILE ******************************************************
                  
-                 .macro LOAD_CONST
-                 ldi @0, low(@2)
-                 ldi @1, high(@2)
-                 .endmacro
+                 
+                 ; Macro LOAD_CONST loads given registers with immediate value, example: LOAD_CONST  R16,R17 1234 
+                 .MACRO LOAD_CONST  
+                     ldi @0, low(@2)
+                     ldi @1, high(@2)
+                 .ENDMACRO 
                  
                  /*** Display ***/
-                 .equ DigitsPort = PORTB
-                 .equ SegmentsPort = PORTD
-                 .equ DisplayRefreshPeriod = 5
+                 .equ DigitsPort             = PORTB
+                 .equ SegmentsPort           = PORTD
+                 .equ DisplayRefreshPeriod   = 5
                  
-                 /*** SET_DIGIT***/
-                 .macro SET_DIGIT
+                 ; SET_DIGIT diplay digit of a number given in macro argument, example: SET_DIGIT 2
+                 .MACRO SET_DIGIT  
                      push R16
-                     ldi r16, (1<<(@0+1))
-                     out DigitsPort, r16   ;Init Seg_0
-                     mov R16, Dig_@0  
-                     rcall DigitTo7segCode  
-                     out SegmentsPort, R16 ;Light Dig_0
+                     push R17
+                 
+                     ldi R16, (2<<(@0))
+                     out DigitsPort, R16
+                 
+                     mov R16, Dig_@0
+                     rcall _DigitTo7segCode
+                     out SegmentsPort, R16
+                 
+                     LOAD_CONST R16, R17, DisplayRefreshPeriod
                      rcall DelayInMs
+                 
+                     pop R17
                      pop R16
-                 .endmacro
+                 
+                 .ENDMACRO 
                  
                  ; ### GLOBAL VARIABLES ###
-                 .def PulseEdgeCtrL=R0 
+                 
+                 .def PulseEdgeCtrL=R0
                  .def PulseEdgeCtrH=R1
                  
                  .def Dig_0=R2
@@ -706,265 +755,323 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm(160): warning: Register 
                  .def Dig_2=R4
                  .def Dig_3=R5
                  
-                 .; ### INTERRUPT VECTORS ###
-                 .cseg    ; segment pamiêci kodu programu 
+                 ; ### INTERRUPT VECTORS ###
+                 .cseg		     ; segment pami?ci kodu programu 
                  
-000000 c029      .org              0      rjmp           _main	
-000004 c012      .org OC1Aaddr	rjmp  _Timer_ISR
-00000b c000      .org 0x0B   rjmp  _ExtInt_ISR   ;ZMIENIC NA 0x0B
+000000 c028      .org	 0      rjmp	_main	 ; skok do programu g?ównego
+000004 c00f      .org OC1Aaddr	rjmp    _Timer_ISR
+00000b c000      .org PCIBaddr   rjmp    _ExtInt_ISR ; skok do procedury obs?ugi przerwania zenetrznego 
                  
+                 ; ### INTERRUPT SEERVICE ROUTINES ###
                  
-                 /*** INTERRUPT SEERVICE ROUTINES ***/
+                 _ExtInt_ISR: 	 ; procedura obs?ugi przerwania zewnetrznego
                  
-                 _ExtInt_ISR: 	 
-                 /**/
-00000c 938f          push R24
-00000d 939f          push R25
-00000e b78f          in R24, SREG
-                 Increment:
-00000f 9403          inc PulseEdgeCtrL
-000010 f411          brne NoOverflow
-000011 9413          inc PulseEdgeCtrH
-000012 c000          rjmp NoOverflow
-                 NoOverflow:
-000013 bf8f          out SREG, R24
-000014 919f          pop R25
-000015 918f          pop R24
-                 /**/
-000016 9518      reti      
+00000c 930f          push R16
+00000d b70f          in R16, SREG
                  
+00000e 9403          inc PulseEdgeCtrL
+00000f f409          brne NoOverflow
+000010 9413              inc PulseEdgeCtrH
+                 
+                     NoOverflow:
+                 
+000011 bf0f          out SREG, R16
+000012 910f          pop R16
+                 
+000013 9518      reti   ; powrót z procedury obs?ugi przerwania (reti zamiast ret)      
                  
                  _Timer_ISR:
-000017 930f          push R16
-000018 931f          push R17
-000019 932f          push R18
-00001a 933f          push R19
-                 /**/
-00001b 934f          push r20
-00001c b74f          in r20,SREG
-00001d 0180              movw r16:r17, PulseEdgeCtrL:PulseEdgeCtrH
-00001e 2400              clr PulseEdgeCtrL
-00001f 2411              clr PulseEdgeCtrH
-000020 d04d              rcall NumberToDigits
-000021 0118              movw Dig_0:Dig_1, r16:r17
-000022 0129              movw Dig_2:Dig_3, r18:r19
-000023 bf4f          out SREG, r20
-000024 914f          pop r20
-                 /**/
-000025 913f          pop R19
-000026 912f          pop R18
-000027 911f          pop R17
-000028 910f          pop R16
+000014 930f          push R16
+000015 931f          push R17
+000016 932f          push R18
+000017 933f          push R19
                  
-000029 9518        reti
+000018 934f          push R20
+000019 b74f          in R20, SREG
                  
-                 _main:
+00001a 0180          movw R17:R16, PulseEdgeCtrH:PulseEdgeCtrL
+00001b 2411          clr PulseEdgeCtrH
+00001c 2400          clr PulseEdgeCtrL
                  
-                 /*** Ext. ints ***/
-00002a 930f      push R16
-00002b 94f8      cli
-00002c e200      ldi R16, (1 << PCIE)    
-00002d bf0b      out GIMSK, R16
-00002e e001      ldi R16, (1 << ISC00) 
-00002f bd00      out PCMSK, R16
-000030 9478      sei
-000031 910f      pop R16
+00001d 9516          lsr R17
+00001e 9507          ror R16
+00001f d050          rcall _NumberToDigits
                  
-                 /***Timer1 CTC wwich 256 Prescaler***/
-000032 930f          push r16
-000033 931f          push r17
-                 
-000034 e00c          ldi r16, (1 << WGM12) | (1 << CS12)  
-000035 bd0e          out TCCR1B, r16
-000036 e400          ldi r16, (1 << OCIE1A)  
-000037 bf09          out TIMSK, r16
-000038 e31d          ldi R17, 61
-000039 e008          ldi R16, 8
-00003a bd1b          out OCR1AH, R17  
-00003b bd0a          out OCR1AL, R16
-00003c 911f          pop r17
-00003d 910f          pop r16
-                 
-                 /***Display***/
-00003e e020      ldi R18, $0
-00003f 2e22      mov Dig_0, R18
-000040 e020      ldi R18, $0
-000041 2e32      mov Dig_1, R18
-000042 e020      ldi R18, $0
-000043 2e42      mov Dig_2, R18
-000044 e020      ldi R18, $0
-000045 2e52      mov Dig_3, R18
-000046 2722      clr r18   
-000047 e70f      ldi r16, 0x7F      
-000048 bb01      out DDRD, r16
-000049 e10e      ldi r16, 0x1E    
-00004a bb07      out DDRB, r16
-00004b 2700      clr r16
-                 
-                 /***Enable Global Interrupts***/
-00004c 9478      SEI
+000020 0118          movw Dig_1:Dig_0, R17:R16
+000021 0129          movw Dig_3:Dig_2, R19:R18
                  
                  
+000022 bf4f          out SREG, R20
+000023 914f          pop R20
                  
-                 MainLoop:
+000024 913f      	pop R19
+000025 912f          pop R18
+000026 911f          pop R17
+000027 910f          pop R16
                  
-00004d 930f
-00004e e002
-00004f bb08
-000050 2d02
-000051 d04b
-000052 bb02
-000053 d052
-000054 910f      SET_DIGIT 0
-000055 930f
-000056 e004
-000057 bb08
-000058 2d03
-000059 d043
-00005a bb02
-00005b d04a
-00005c 910f      SET_DIGIT 1
-00005d 930f
-00005e e008
-00005f bb08
-000060 2d04
-000061 d03b
-000062 bb02
-000063 d042
-000064 910f      SET_DIGIT 2
-000065 930f
-000066 e100
-000067 bb08
-000068 2d05
-000069 d033
-00006a bb02
-00006b d03a
-00006c 910f      SET_DIGIT 3       
-                    
-00006d cfdf      rjmp MainLoop       
+000028 9518        reti
                  
-                 ; internals 
-                 .def Dig0=R22 ; Digits temps 
-                 .def Dig1=R23 ;  
-                 .def Dig2=R24 ;  
-                 .def Dig3=R25 ;       
-                             
-                 ; inputs   ;MOVE HERE FROM BOTTOM
-                 .def XL=R16 ; divident   
-                 .def XH=R17  
-                 .def YL=R18 ; divisor 
-                 .def YH=R19  
-                 ; outputs 
-                 .def RL=R16 ; remainder  
-                 .def RH=R17  
-                 .def QL=R18 ; quotient 
-                 .def QH=R19  
-                 ; internal 
-                 .def QCtrL=R24 
+                 ; ### MAIN PROGAM ###
+                 
+                 _main: 
+                     ; *** Initialisations ***
+000029 94f8          cli
+                     ;--- Ext. ints --- PB0
+                     ;push R16
+00002a e200          ldi R16, (1<<PCIE0)
+00002b bf0b          out GIMSK, R16
+                 
+00002c e001          ldi R16, (1<<PCINT0)
+00002d bd00          out PCMSK0, R16
+                     ;pop R16
+                 	;--- Timer1 --- CTC with 256 prescaller
+                     ;push R16
+                     ;push R17
+00002e e00c          ldi R16, ((1<<CTC1)|(1<<CS12))
+00002f bd0e          out TCCR1B, R16
+                 
+000030 e400          ldi R16, (1<<OCIE1A)
+000031 bf09          out TIMSK, R16  
+                 
+000032 e102
+000033 e71a          LOAD_CONST R16, R17, 31250
+000034 bd1b          out OCR1AH, R17
+000035 bd0a          out OCR1AL, R16
+                    ; pop R17
+                    ; pop R16
+                 	;---  Display  --- 
+                    ; push R16
+                 
+000036 2422          clr Dig_0
+000037 2433          clr Dig_1
+000038 2444          clr Dig_2
+000039 2455          clr Dig_3
+                 
+00003a e10e          ldi R16, 0x1e
+00003b bb07          out DDRB, R16
+                 
+00003c e70f          ldi R16, 0x7F
+00003d bb01          out DDRD, R16
+                 
+                    ; pop R16
+                 
+                 	; --- enable gloabl interrupts
+00003e 9478          sei
+                 
+                 MainLoop:   ; presents Digit0-3 variables on a Display
+00003f 930f
+000040 931f
+000041 e002
+000042 bb08
+000043 2d02
+000044 d059
+000045 bb02
+000046 e005
+000047 e010
+000048 d05e
+000049 911f
+00004a 910f      			SET_DIGIT 0
+00004b 930f
+00004c 931f
+00004d e004
+00004e bb08
+00004f 2d03
+000050 d04d
+000051 bb02
+000052 e005
+000053 e010
+000054 d052
+000055 911f
+000056 910f      			SET_DIGIT 1
+000057 930f
+000058 931f
+000059 e008
+00005a bb08
+00005b 2d04
+00005c d041
+00005d bb02
+00005e e005
+00005f e010
+000060 d046
+000061 911f
+000062 910f      			SET_DIGIT 2
+000063 930f
+000064 931f
+000065 e100
+000066 bb08
+000067 2d05
+000068 d035
+000069 bb02
+00006a e005
+00006b e010
+00006c d03a
+00006d 911f
+00006e 910f      			SET_DIGIT 3
+                 
+00006f cfcf      			RJMP MainLoop
+                 
+                 ; ### SUBROUTINES ###
+                 
+                 ;*** NumberToDigits ***
+                 ;converts number to coresponding digits
+                 ;input/otput: R16-17/R16-19
+                 ;internals: X_R,Y_R,Q_R,R_R - see _Divider
+                 
+                 ; internals
+                 .def Dig0=R22 ; Digits temps
+                 .def Dig1=R23 ; 
+                 .def Dig2=R24 ; 
+                 .def Dig3=R25 ; 
+                 
+                 _NumberToDigits:
+                 
+000070 936f      	push Dig0
+000071 937f      	push Dig1
+000072 938f      	push Dig2
+000073 939f      	push Dig3
+                 
+                 	; thousands 
+000074 ee28
+000075 e033          LOAD_CONST R18, R19, 1000
+000076 d013          rcall _Divide
+000077 2f62          mov Dig0, R18
+                 
+                 	; hundreads 
+000078 e624
+000079 e030          LOAD_CONST R18, R19, 100
+00007a d00f          rcall _Divide
+00007b 2f72          mov Dig1, R18     
+                 
+                 	; tens 
+00007c e02a
+00007d e030          LOAD_CONST R18, R19, 10
+00007e d00b          rcall _Divide
+00007f 2f82          mov Dig2, R18   
+                 
+                 	; ones 
+000080 2f90          mov Dig3, R16
+                 
+                 	; otput result
+000081 2f06      	mov R16,Dig0
+000082 2f17      	mov R17,Dig1
+000083 2f28      	mov R18,Dig2
+000084 2f39      	mov R19,Dig3
+                 
+000085 919f      	pop Dig3
+000086 918f      	pop Dig2
+000087 917f      	pop Dig1
+000088 916f      	pop Dig0
+                 
+000089 9508      	ret
+                 
+                 ;*** Divide ***
+                 ; divide 16-bit nr by 16-bit nr; X/Y -> Qotient,Reminder
+                 ; Input/Output: R16-19, Internal R24-25
+                 
+                 ; inputs
+                 .def XL=R16 ; divident  
+                 .def XH=R17 
+                 
+                 .def YL=R18 ; divider
+                 .def YH=R19 
+                 
+                 ; outputs
+                 
+                 .def RL=R16 ; reminder 
+                 .def RH=R17 
+                 
+                 .def QL=R18 ; quotient
+                 .def QH=R19 
+                 
+                 ; internal
+                 .def QCtrL=R24
                  .def QCtrH=R25
                  
-                 NumberToDigits:
-00006e 936f      push Dig0
-00006f 937f      push Dig1
-000070 938f      push Dig2
-000071 939f      push Dig3
-                 /**/
-                 ;Thousand
-000072 ee28
-000073 e033      LOAD_CONST YL, YH, 1000 
-000074 d013      rcall Divide
-000075 2f62      mov Dig0,QL
-                 ;Hundreds
-000076 e624
-000077 e030      LOAD_CONST YL, YH, 100  
-000078 d00f      rcall Divide
-000079 2f72      mov Dig1, QL
-                  ;Tens
-00007a e02a
-00007b e030      LOAD_CONST YL, YH, 10  
-00007c d00b      rcall Divide
-00007d 2f82      mov Dig2, QL
-                 ;Ones
-00007e 2f90      mov Dig3, RL
-                 /**/
-00007f 2f06      mov XL,Dig0
-000080 2f17      mov XH,Dig1
-000081 2f28      mov YL,Dig2
-000082 2f39      mov YH,Dig3
-000083 919f      pop Dig3
-000084 918f      pop Dig2
-000085 917f      pop Dig1
-000086 916f      pop Dig0
-000087 9508      ret
+00008a 938f      _Divide:push R24 ;save internal variables on stack
+00008b 939f              push R25
+                 		
+00008c 2788              clr QCtrL
+00008d 2799              clr QCtrH
                  
-                 Divide:
-000088 938f      push R24
-000089 939f      push R25
-                 /**/
-00008a 2788      clr r24
-00008b 2799      clr r25
-                 Compare:
-00008c 1702          cp  XL, YL     
-00008d 0713          cpc XH, YH    
-00008e f020          brcs end_div  
-00008f 1b02          sub XL, YL    
-000090 0b13          sbc XH, YH   
-000091 9601          adiw QCtrL, 1  
-000092 cff9          rjmp Compare  
-                 end_div:
-000093 0188          movw RL, XL
-000094 019c          movw QL, QCtrl
-                 /**/
+                         DivideLoop:
                  
-000095 919f          pop R25
-000096 918f          pop R24
-000097 9508          ret
-                 /***DIGITT_TO_7_SEGMENT***/
-000098 063f
-000099 4f5b
-00009a 6d66
-00009b 077d
-00009c 6f7f      Table: .db 0x3F,0x06,0x5B,0x4F,0x66,0x6D,0x7D,0x07,0x7F,0x6F 
+00008e 1702                  cp XL, YL
+00008f 0713                  cpc XH, YH
+000090 f020                  brlo ExitDivide
                  
-                 DigitTo7segCode:
-00009d 93ef      push R30
-00009e 93ff      push R31
-                 /**/
-00009f e3e0      ldi R30, low(Table<<1)   
-0000a0 e0f1      ldi R31, high(Table<<1) 
-0000a1 0fe0      add R30, R16
-0000a2 9104      lpm R16, Z    
-                 /**/
-0000a3 91ff      pop R31
-0000a4 91ef      pop R30
-0000a5 9508      ret
+000091 1b02                  sub XL, YL
+000092 0b13                  sbc XH, YH
                  
-                 /***DelayInMs***/
-                 DelayInMs:
-0000a6 938f          push R24
-0000a7 939f          push R25 
-0000a8 e085
-0000a9 e090          LOAD_CONST R24, R25, $5 ;5ms  200Hz Segment (50Hz ca³y)
-                     InsideDelayInMs:
-0000aa d005          rcall OneMsLoop
-0000ab 9701          sbiw R24, 1
-0000ac f7e9          brne InsideDelayInMs
-0000ad 919f          pop R25
-0000ae 918f          pop R24
-0000af 9508          ret
+000093 9601                  adiw QCtrH:QCtrL, 1
                  
-                 /***OneMsLoop***/
-                 OneMsLoop:
-0000b0 93ef          push r30
-0000b1 93ff          push r31
-0000b2 eceb
-0000b3 e0f7          LOAD_CONST R30, R31, $07CB ;1995us
-                     InsideDelayOneMs:
-0000b4 9731              sbiw r30, 1
-0000b5 f7f0              brcc InsideDelayOneMs
-0000b6 91ff              pop r31
-0000b7 91ef              pop r30
-0000b8 9508              ret
+000094 cff9                  rjmp DivideLoop
+                 
+                         ExitDivide:
+                 
+000095 019c              movw QH:QL, QCtrH:QCtrL
+                 
+000096 919f      		pop R25 ; pop internal variables from stack
+000097 918f      		pop R24
+                 
+000098 9508      		ret
+                 
+                 ; *** DigitTo7segCode ***
+                 ; In/Out - R16
+                 
+000099 063f
+00009a 4f5b
+00009b 6d66
+00009c 077d
+00009d 6f7f      Table: .db 0x3f,0x06,0x5B,0x4F,0x66,0x6d,0x7D,0x07,0x7f,0x6f
+                 
+                 _DigitTo7segCode:
+                 
+00009e 93ef      push R30
+00009f 93ff      push R31
+                 
+0000a0 e0f1          ldi R31, high(Table<<1)
+0000a1 e3e2          ldi R30, low(Table<<1)
+                 
+0000a2 0fe0          add R30, R16
+                 
+0000a3 9104          lpm R16, Z
+                 
+0000a4 91ff      pop R31
+0000a5 91ef      pop R30
+                 
+0000a6 9508      ret
+                 
+                 ; *** DelayInMs ***
+                 ; In: R16,R17
+                 DelayInMs:  
+0000a7 938f                  push R24
+0000a8 939f      			push R25
+                 
+0000a9 01c8                  movw R25:R24, R17:R16
+                             DelayLoop:
+0000aa d005                      rcall OneMsLoop
+0000ab 9701                      sbiw R25:R24, 1
+0000ac f7e9                      brne DelayLoop
+                 
+0000ad 919f      			pop R25
+0000ae 918f      			pop R24
+                 
+0000af 9508      			ret
+                 
+                 ; *** OneMsLoop ***
+                 OneMsLoop:	
+0000b0 938f      			push R24
+0000b1 939f      			push R25 
+                 			
+0000b2 ed80
+0000b3 e097      			LOAD_CONST R24,R25,2000                    
+                 
+0000b4 9701      L1:			SBIW R24:R25,1 
+0000b5 f7f1      			BRNE L1
+                 
+0000b6 919f      			pop R25
+0000b7 918f      			pop R24
+                 
 
 
 RESOURCE USE INFORMATION
@@ -981,36 +1088,36 @@ counted separately from r26..r31 here.
 
 .dseg memory usage only counts static data declared with .byte
 
-"ATtiny2313" register use summary:
+"ATtiny2313A" register use summary:
 r0 :   3 r1 :   3 r2 :   3 r3 :   3 r4 :   3 r5 :   3 r6 :   0 r7 :   0 
 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 r13:   0 r14:   0 r15:   0 
-r16:  55 r17:  11 r18:  22 r19:   9 r20:   4 r21:   0 r22:   4 r23:   4 
-r24:  17 r25:  12 r26:   0 r27:   0 r28:   0 r29:   0 r30:   8 r31:   6 
+r16:  58 r17:  23 r18:  13 r19:  10 r20:   4 r21:   0 r22:   4 r23:   4 
+r24:  17 r25:  17 r26:   0 r27:   0 r28:   0 r29:   0 r30:   4 r31:   3 
 x  :   0 y  :   0 z  :   1 
 Registers used: 18 out of 35 (51.4%)
 
-"ATtiny2313" instruction use summary:
+"ATtiny2313A" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   0 add   :   1 adiw  :   1 and   :   0 
 andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   1 brcs  :   1 break :   0 breq  :   0 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
-brne  :   2 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
+brcc  :   0 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   0 
+brne  :   3 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 cbi   :   0 cbr   :   0 clc   :   0 
-clh   :   0 cli   :   1 cln   :   0 clr   :   6 cls   :   0 clt   :   0 
+clh   :   0 cli   :   1 cln   :   0 clr   :   8 cls   :   0 clt   :   0 
 clv   :   0 clz   :   0 com   :   0 cp    :   1 cpc   :   1 cpi   :   0 
 cpse  :   0 dec   :   0 eor   :   0 icall :   0 ijmp  :   0 in    :   2 
-inc   :   2 ld    :   0 ldd   :   0 ldi   :  28 lds   :   0 lpm   :   2 
-lsl   :   0 lsr   :   0 mov   :  16 movw  :   5 neg   :   0 nop   :   0 
+inc   :   2 ld    :   0 ldd   :   0 ldi   :  30 lds   :   0 lpm   :   2 
+lsl   :   0 lsr   :   1 mov   :  12 movw  :   5 neg   :   0 nop   :   0 
 or    :   0 ori   :   0 out   :  18 pop   :  26 push  :  26 rcall :  13 
-ret   :   5 reti  :   2 rjmp  :   6 rol   :   0 ror   :   0 sbc   :   1 
+ret   :   5 reti  :   2 rjmp  :   5 rol   :   0 ror   :   1 sbc   :   1 
 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 sbiw  :   2 sbr   :   0 
-sbrc  :   0 sbrs  :   0 sec   :   0 seh   :   0 sei   :   2 sen   :   0 
+sbrc  :   0 sbrs  :   0 sec   :   0 seh   :   0 sei   :   1 sen   :   0 
 ser   :   0 ses   :   0 set   :   0 sev   :   0 sez   :   0 sleep :   0 
 spm   :   0 st    :   0 std   :   0 sts   :   0 sub   :   1 subi  :   0 
 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 26 out of 105 (24.8%)
+Instructions used: 27 out of 105 (25.7%)
 
-"ATtiny2313" memory use summary [bytes]:
+"ATtiny2313A" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
 [.cseg] 0x000000 0x000172    342     10    352    2048  17.2%

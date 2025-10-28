@@ -1,17 +1,17 @@
 <ASSEMBLER_INFO>
  <VERSION>2.1.57</VERSION>
- <DEVICE>"ATtiny2313"</DEVICE>
- <WORKING_DIR>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\Debug</WORKING_DIR>
+ <DEVICE>"ATtiny2313A"</DEVICE>
+ <WORKING_DIR>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\Debug</WORKING_DIR>
  <INCLUDE_PATH>
   <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</SOURCE_FILE>
+ <SOURCE_FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</SOURCE_FILE>
  <INCLUDED_FILES>
-  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc</FILE>
+  <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313Adef.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
-  <FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\Debug/cw_49.obj</FILE>
+  <FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\Debug/cw_49.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
   <FILE>cw_49.hex</FILE>
@@ -21,21 +21,20 @@
   <FILE>cw_49.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <_main><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>85</LINE></_main>
-  <_Timer_ISR><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>61</LINE></_Timer_ISR>
-  <_ExtInt_ISR><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>43</LINE></_ExtInt_ISR>
-  <Increment><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>48</LINE></Increment>
-  <NoOverflow><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>53</LINE></NoOverflow>
-  <NumberToDigits><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>162</LINE></NumberToDigits>
-  <MainLoop><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>133</LINE></MainLoop>
-  <DigitTo7segCode><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>218</LINE></DigitTo7segCode>
-  <DelayInMs><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>232</LINE></DelayInMs>
-  <Divide><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>193</LINE></Divide>
-  <Compare><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>199</LINE></Compare>
-  <end_div><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>207</LINE></end_div>
-  <Table><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>216</LINE></Table>
-  <InsideDelayInMs><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>236</LINE></InsideDelayInMs>
-  <OneMsLoop><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>245</LINE></OneMsLoop>
-  <InsideDelayOneMs><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_49\main.asm</FILE><LINE>249</LINE></InsideDelayOneMs>
+  <_main><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>102</LINE></_main>
+  <_Timer_ISR><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>69</LINE></_Timer_ISR>
+  <_ExtInt_ISR><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>53</LINE></_ExtInt_ISR>
+  <NoOverflow><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>62</LINE></NoOverflow>
+  <_NumberToDigits><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>167</LINE></_NumberToDigits>
+  <MainLoop><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>146</LINE></MainLoop>
+  <_DigitTo7segCode><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>261</LINE></_DigitTo7segCode>
+  <DelayInMs><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>280</LINE></DelayInMs>
+  <_Divide><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>228</LINE></_Divide>
+  <DivideLoop><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>234</LINE></DivideLoop>
+  <ExitDivide><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>247</LINE></ExitDivide>
+  <Table><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>259</LINE></Table>
+  <DelayLoop><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>285</LINE></DelayLoop>
+  <OneMsLoop><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>296</LINE></OneMsLoop>
+  <L1><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_49\main.asm</FILE><LINE>302</LINE></L1>
  </LABELS>
 </ASSEMBLER_INFO>

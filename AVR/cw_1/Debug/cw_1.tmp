@@ -1,17 +1,17 @@
 <ASSEMBLER_INFO>
  <VERSION>2.1.57</VERSION>
  <DEVICE>"ATtiny2313"</DEVICE>
- <WORKING_DIR>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_1\Debug</WORKING_DIR>
+ <WORKING_DIR>C:\Users\kmus\Desktop\PN_2025\AVR\cw_1\Debug</WORKING_DIR>
  <INCLUDE_PATH>
   <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_1\main.asm</SOURCE_FILE>
+ <SOURCE_FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_1\main.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
-  <FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_1\Debug/cw_1.obj</FILE>
+  <FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_1\Debug/cw_1.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
   <FILE>cw_1.hex</FILE>

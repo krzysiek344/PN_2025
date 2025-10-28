@@ -1,17 +1,17 @@
 <ASSEMBLER_INFO>
  <VERSION>2.1.57</VERSION>
  <DEVICE>"ATtiny2313"</DEVICE>
- <WORKING_DIR>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\Debug</WORKING_DIR>
+ <WORKING_DIR>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\Debug</WORKING_DIR>
  <INCLUDE_PATH>
   <DIR>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include</DIR>
   <DIR></DIR>
  </INCLUDE_PATH>
- <SOURCE_FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</SOURCE_FILE>
+ <SOURCE_FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
-  <FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\Debug/cw_48.obj</FILE>
+  <FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\Debug/cw_48.obj</FILE>
  </OBJECT_FILES>
  <HEX_FILES>
   <FILE>cw_48.hex</FILE>
@@ -21,18 +21,18 @@
   <FILE>cw_48.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <_main><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>43</LINE></_main>
-  <_timer_isr><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>84</LINE></_timer_isr>
-  <_pcint0_isr><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>110</LINE></_pcint0_isr>
-  <_MainLoop><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>75</LINE></_MainLoop>
-  <DigitTo7segCode><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>141</LINE></DigitTo7segCode>
-  <DelayOneMs><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>127</LINE></DelayOneMs>
-  <NumberToDigits><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>202</LINE></NumberToDigits>
-  <no_carry><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>118</LINE></no_carry>
-  <count_ms><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>132</LINE></count_ms>
-  <SegCodesTable><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>156</LINE></SegCodesTable>
-  <Divide><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>173</LINE></Divide>
-  <repeat_sub><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>178</LINE></repeat_sub>
-  <end_div><FILE>C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm</FILE><LINE>186</LINE></end_div>
+  <_main><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>43</LINE></_main>
+  <_timer_isr><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>84</LINE></_timer_isr>
+  <_pcint0_isr><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>110</LINE></_pcint0_isr>
+  <_MainLoop><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>75</LINE></_MainLoop>
+  <DigitTo7segCode><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>141</LINE></DigitTo7segCode>
+  <DelayOneMs><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>127</LINE></DelayOneMs>
+  <NumberToDigits><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>202</LINE></NumberToDigits>
+  <no_carry><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>118</LINE></no_carry>
+  <count_ms><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>132</LINE></count_ms>
+  <SegCodesTable><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>156</LINE></SegCodesTable>
+  <Divide><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>173</LINE></Divide>
+  <repeat_sub><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>178</LINE></repeat_sub>
+  <end_div><FILE>C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm</FILE><LINE>186</LINE></end_div>
  </LABELS>
 </ASSEMBLER_INFO>

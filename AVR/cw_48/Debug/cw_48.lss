@@ -1,12 +1,12 @@
 
-AVRASM ver. 2.1.57  C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm Sun Oct 26 16:03:39 2025
+AVRASM ver. 2.1.57  C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm Wed Oct 29 00:39:03 2025
 
 [builtin](2): Including file 'C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc'
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm(1): Including file 'C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc'
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm(166): warning: Register r16 already defined by the .DEF directive
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm(167): warning: Register r17 already defined by the .DEF directive
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm(168): warning: Register r18 already defined by the .DEF directive
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm(169): warning: Register r19 already defined by the .DEF directive
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm(1): Including file 'C:\Program Files (x86)\Atmel\Atmel Toolchain\AVR Assembler\Native\2.1.1175\avrassembler\Include\tn2313def.inc'
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm(166): warning: Register r16 already defined by the .DEF directive
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm(167): warning: Register r17 already defined by the .DEF directive
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm(168): warning: Register r18 already defined by the .DEF directive
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm(169): warning: Register r19 already defined by the .DEF directive
                  
                  .include "tn2313def.inc"
                  
@@ -898,11 +898,11 @@ C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm(169): warning: Register 
                  SegCodesTable:
 000083 063f
 000084 4fdb
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm(157): warning: .cseg .db misalignment - padding zero byte
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm(157): warning: .cseg .db misalignment - padding zero byte
 000085 0066      	.db 0b00111111, 0b00000110, 0b11011011, 0b01001111, 0b01100110
 000086 7d6d
 000087 7f07
-C:\Users\muskr\Desktop\3_sem\PN_2025\AVR\cw_48\main.asm(158): warning: .cseg .db misalignment - padding zero byte
+C:\Users\kmus\Desktop\PN_2025\AVR\cw_48\main.asm(158): warning: .cseg .db misalignment - padding zero byte
 000088 006f      	.db 0b01101101, 0b01111101, 0b00000111, 0b01111111, 0b01101111
                  
                  ;===================== DZIELENIE =====================

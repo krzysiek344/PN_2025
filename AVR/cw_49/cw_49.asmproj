@@ -6,7 +6,7 @@
     <ToolchainName>com.Atmel.AVRAssembler</ToolchainName>
     <ProjectGuid>{6fe090ff-fa86-4266-9d2e-2c8d55abdfb2}</ProjectGuid>
     <avrdeviceseries>none</avrdeviceseries>
-    <avrdevice>ATtiny2313</avrdevice>
+    <avrdevice>ATtiny2313A</avrdevice>
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.obj</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
